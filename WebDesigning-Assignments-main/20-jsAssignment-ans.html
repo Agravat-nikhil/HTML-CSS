@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20th-jsAssignment-ans</title>
+</head>
+<body>
+  Password:<input type="password" id="showP">
+  <br><br>
+  <input type="checkbox" name="Show Password" id="" value="Show Password" onclick="showPass()">show Password
+</body>
+
+<script>
+  getP = document.getElementById('showP');
+
+  function showPass(){
+    if(getP.type === "password"){
+      getP.type = "text";
+    }
+    else{
+      getP.type = "password";
+    }
+  }
+</script>
+</html>
